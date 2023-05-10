@@ -55,7 +55,7 @@
                         @method('PUT')
                         <input hidden type="text" name="status" class="form-control" value="1">
                         <input hidden type="datetime-local" name="checkin" class="form-control" value="{{ now() }}">
-                        <button type="submit" class="btn btn-success" style="margin-left: 5px">Check In</button>
+                        <button type="submit" class="btn btn-success" style="margin-left: 5px" <?php if ($tiket->status === "1"){ ?> disabled <?php   } ?> >Check In</button>
                     </form>
                 </div>
             </td>

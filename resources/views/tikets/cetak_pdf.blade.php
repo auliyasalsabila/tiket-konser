@@ -23,18 +23,17 @@
 			</tr>
 		</thead>
 		<tbody>
-			@foreach ($tikets as $tiket)
+			@foreach ($buktis as $bukti)
         <tr style="text-align: center;">
             <td>{{ ++$i }}</td>
-            <td>{{ $tiket->id }}</td>
-            <td>{{ $tiket->nama }}</td>
-            <td>{{ $tiket->no_hp }}</td>
-            <td>{{ $tiket->email }}</td>
-            <td>{{ $tiket->status === "0" ? "-" : "Check In" }}</td>
-            <td>{{ $tiket->checkin === null ? "-" : $tiket->checkin }}</td>
+            <td>{{ $bukti->id }}</td>
+            <td>{{ $bukti->nama }}</td>
+            <td>{{ $bukti->no_hp }}</td>
+            <td>{{ $bukti->email }}</td>
+            <td>{{ $bukti->status === "0" ? "-" : "Check In" }}</td>
+            <td>{{ $bukti->checkin === null ? "-" : $bukti->checkin }}</td>
         @endforeach
 		</tbody>
 	</table>
- 
 </body>
 </html>
